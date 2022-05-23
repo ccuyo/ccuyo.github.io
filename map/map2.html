@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>無標記地圖</title>  
+      <style>
+          #map{
+              width:900px;
+              height:750px;
+          }
+      </style>
+    </head>
+    <body>
+        <div id="map"></div>
+
+        <script type="text/javascript">
+            function initMap(){
+                const location = {lat:23.56056, lng:120.46901};
+                const map= new google.maps.Map(
+                    document.getElementById("Map"), {
+                        center:location,
+                        zoom:15
+
+                    }
+                );
+            }
+            window.initMap = initMap;
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDLM8UnSHpFjzusSDJRugQHJqZVhGJoCFs
+        &callback=initMap"></script>
+    </body>
+
+</html>
