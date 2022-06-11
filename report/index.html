@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+           
+            body{width:100%; min-width:300px; max-width: 1500px;
+                  margin:0 auto; text-align:center;}
+            header{margin: 3%; background:lightgreen;}
+            nav{margin: 2%;color:blue;background:white;}
+            main{float:left; width: 50%; height:300px; margin:0%; background:blue;}
+            aside{float:left; width:50%; height:300px; margin:0%; background:pink;}
+
+        </style>
+    </head>
+    <body style="background-color:burlywood;background-image:url(line.png);">
+        <header><h1>歡迎進入右泰的網頁</h1></header>
+        <nav><h1><h1><<a href="recommend.html">書單推薦 <br> <a href="popular.html"> 熱門書籍></a> </a></h1></nav>
+        <form>
+            <fieldset>
+                <legend>個人資料</legend>
+                <p>姓&nbsp;&nbsp;名:<input type="text" name="userName" size="40"></p>
+                <p>E-Mail:<input type="text" name="userMail"size="40" value="username@mailserver"></p>
+            </fieldset><br>
+            <fieldset>
+                <legend>閱讀心得分享</legend>
+                <textarea name="心得分享" cols="45" row="4"></textarea>
+            </fieldset><br>
+            <input type="submit" value="提交">
+            <input type="reset" value="重設">
+
+        </form>
+        <main><h1>網頁介紹</h1></main>
+        <aside><h1>個人介紹</h1></aside>
+
+        <div class="carousel slide" data-bs-ride=carousel>
+            <div class=carosuel-inner>
+                <div class="carousel-item active"><img src=被討厭的勇氣.jpg></div>
+                <div class="carousel-item"><img src=1479114032-2669386261.jpg></div>
+                <div class="carousel-item"><img src=3136cvVw5hL.jpg></div>
+            </div>
+        </div>
+    </body>
+</html>
